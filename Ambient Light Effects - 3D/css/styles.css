@@ -17,7 +17,7 @@ body {
     height: 300px;
     transform-style: preserve-3d;
     transform: rotateX(-30deg);
-    animation: anima 4s linear infinite;
+    animation: anima 3s linear infinite;
 }
 @keyframes anima{
     0% {
@@ -42,17 +42,22 @@ body {
     left: 0;
     width: 101%;
     height: 101%;
-    background: linear-gradient(#151515, #00ec00);
+    background:  linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);;
     transform: rotateY(calc(90deg * var(--i))) translateZ(150px);/* 300/2 = 150*/
 }
 .top {
     position: absolute;
     top: 0;
     left: 0;
-    height: 301px;
-    width: 301px;
-    background: #222;
+    height: 302px;
+    width: 302px;
+    background:  linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);;
     transform: rotateX(90deg) translateZ(150px);
+    
 }
 .top::before {
     content: '';
@@ -61,12 +66,12 @@ body {
     left: 0;
     width: 300px;
     height: 300px;
-    background: #0f0;
+    background: rgb(43, 255, 0);
     filter: blur(20px);
     transform: translateZ(-380px);
-    box-shadow: 0 0 120px rgba(0, 255, 0, 0.2),
+    box-shadow: 0 0 120px rgba(81, 255, 0, 0.2),
     0 0 200px rgba(0, 255, 0, 0.4),
-    0 0 200px rgba(0, 255, 0, 0.6),
     0 0 200px rgba(0, 255, 0, 0.8),
-    0 0 200px rgba(0, 255, 0, 1);
+    0 0 200px rgba(0, 255, 0, 1.2),
+    0 0 200px rgba(0, 255, 0, 1.6);
 }
