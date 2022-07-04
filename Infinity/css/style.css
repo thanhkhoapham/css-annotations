@@ -21,6 +21,7 @@ section{
 }
 section .container{
     display: flex;
+    width: 100%;
 }
 section .container .circle{
     position: relative;
